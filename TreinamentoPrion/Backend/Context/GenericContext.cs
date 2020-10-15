@@ -11,7 +11,10 @@ namespace Backend.Context
     public class GenericContext : DbContext
     {
         public GenericContext() : base("Data Source=sdsd;Initial Catalog=asajsajs")
-    }
+        {
 
-    public Dbset<Pessoa> Pessoas { get; set; }
+        }
+        public DbSet<Pessoa> Pessoas { get; set; }
+    }
+    
 }
